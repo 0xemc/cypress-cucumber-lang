@@ -1,8 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { userStore } from "./store/userStore";
   import RegistrationForm from "./components/RegistrationForm.svelte";
   import TextInput from "./components/TextInput.svelte";
+  import { userStore } from "./store/userStore";
   import { User } from "./types/User";
 
   let user: User | null = null;

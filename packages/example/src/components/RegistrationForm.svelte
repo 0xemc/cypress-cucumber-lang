@@ -2,12 +2,12 @@
   import { userStore } from "../store/userStore";
   import type { User } from "../types/User";
 
-  let name = "";
+  let username = "";
   let email = "";
 
   const register = () => {
     const user: User = {
-      name,
+      username,
       email,
     };
 
@@ -17,7 +17,7 @@
 
 <form on:submit|preventDefault={register}>
   <label for="name">Name</label>
-  <input id="name" bind:value={name} required />
+  <input id="name" bind:value={username} required />
 
   <label for="email">Email</label>
   <input id="email" type="email" bind:value={email} required />
