@@ -3,7 +3,6 @@
   "author": "Michael Collins",
   "version": "1.0.0-alpha",
   "description": "A human readable testing framework for web interfaces",
-  "main": "lib/dist/index.js",
   "license": "ISC",
   "workspaces": [
     "packages/*"

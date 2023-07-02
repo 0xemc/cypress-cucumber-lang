@@ -3,7 +3,7 @@
   import { userStore } from "./store/userStore";
   import RegistrationForm from "./components/RegistrationForm.svelte";
   import TextInput from "./components/TextInput.svelte";
-  import type { User } from "./types/User";
+  import { User } from "./types/User";
 
   let user: User | null = null;
 
@@ -29,7 +29,7 @@
 
 <main>
   {#if user}
-    <h1>Welcome, {user.name}!</h1>
+    <h1>Welcome, {user.username}!</h1>
     <TextInput bind:value={textInput} />
     <button on:click={saveText}>Save Text</button>
   {:else}
