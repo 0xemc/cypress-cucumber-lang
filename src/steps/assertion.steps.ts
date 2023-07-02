@@ -1,6 +1,6 @@
-import { DataTable, Then } from '@badeball/cypress-cucumber-preprocessor';
-import { CYPRESS_EXTRA_LONG_WAIT } from '../cypress.constants';
-import { hasOperationInput } from '../cypress.utils';
+import { DataTable, Then } from "@badeball/cypress-cucumber-preprocessor";
+import { CYPRESS_EXTRA_LONG_WAIT } from "../cypress.constants";
+import { hasOperationInput } from "../cypress.utils";
 
 Then(
   /(the|a) ([^!.?\s]+)( element)?( with text '(.*)')? (should|does) ([a-z.]+)( '(.*)')?/,
@@ -40,14 +40,14 @@ Then(
         name: value,
         /**@todo remove these extra long waits */
         timeout: CYPRESS_EXTRA_LONG_WAIT,
-      }).should('have.length', count);
+      }).should("have.length", count);
     } else {
       if (value) {
         cy.findAllByTestId(roleOrId)
           .contains(value)
-          .should('have.length', count);
+          .should("have.length", count);
       } else {
-        cy.findAllByTestId(roleOrId).should('have.length', count);
+        cy.findAllByTestId(roleOrId).should("have.length", count);
       }
     }
   }
@@ -79,14 +79,14 @@ Then(
 );
 
 Then(/a file with the name '(.*)' should be downloaded/, (name: string) => {
-  cy.readFile(Cypress.config('downloadsFolder') + '/' + name).should('exist');
+  cy.readFile(Cypress.config("downloadsFolder") + "/" + name).should("exist");
 });
 
 Then(
   /(the|a) '(.*)' request (is|has been) sent( with input:)?/,
   (_, request: string, __, checkInput: string, input: string) => {
     /** If our tests are running e2e then ignore network request assertions */
-    const islocal = Cypress.env('app_url').includes('localhost');
+    const islocal = Cypress.env("app_url").includes("localhost");
     if (!islocal) return;
 
     cy.wait(request).then(({ request }) => {
@@ -119,5 +119,5 @@ Then(
 );
 
 Then(/the current route is '([a-z./]*)'/, (route) => {
-  cy.location('pathname').should('equal', route);
+  cy.location("pathname").should("equal", route);
 });

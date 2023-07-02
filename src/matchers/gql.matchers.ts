@@ -1,4 +1,4 @@
-import { GQLFixtureMatcher } from "../cypress.types";
+import { GQLFixtureMatcher } from "../support/cypress.types";
 
 export const GQL_MATCHERS: GQLFixtureMatcher[] = [
   {

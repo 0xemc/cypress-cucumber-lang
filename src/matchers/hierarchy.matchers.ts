@@ -1,4 +1,4 @@
-import { RESTFixtureMatcher } from "../cypress.types";
+import { RESTFixtureMatcher } from "../support/cypress.types";
 
 export const RESTMatchers: RESTFixtureMatcher[] = [
   {
