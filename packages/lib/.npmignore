@@ -1,4 +1,3 @@
    *.ts
    node_modules
-   src
-   test
+   lib/src
