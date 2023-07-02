@@ -1,38 +1,7 @@
 {
   "data": {
-    "addPromotion": {
-      "assortmentDealsheet": {
-        "promotions": [
-          {
-            "promotionId": "7d32b9c1-5e0c-47a5-9de6-7d0b33a41cc6",
-            "promotionType": "IN_STORE"
-          },
-          {
-            "promotionId": "da0684f7-458e-4e0f-a822-968a190435fa",
-            "promotionType": "IN_STORE"
-          },
-          {
-            "promotionId": "fb8365c7-cddc-49f1-ae4f-030f843a628a",
-            "promotionType": "IN_STORE"
-          },
-          {
-            "promotionId": "51851b19-805e-4f57-a065-57a9f1ab1695",
-            "promotionType": "IN_STORE"
-          },
-          {
-            "promotionId": "d47f5248-5d08-4311-a9bf-f93f6df09c9b",
-            "promotionType": "IN_STORE"
-          },
-          {
-            "promotionId": "f0c1e8cb-69d7-4005-b9da-1cee9f7b436c",
-            "promotionType": "IN_STORE"
-          },
-          {
-            "promotionId": "09323c6f-de78-4a8e-8f17-ef362ab35177",
-            "promotionType": "IN_STORE"
-          }
-        ]
-      }
+    "someMutationName": {
+      "input": {}
     }
   }
 }

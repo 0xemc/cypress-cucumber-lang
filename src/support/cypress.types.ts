@@ -1,7 +1,7 @@
-import { CyHttpMessages } from 'cypress/types/net-stubbing';
+import { CyHttpMessages } from "cypress/types/net-stubbing";
 
 /** A definition that maps a particular response to a particular request and alias */
-export type TypesenseFixtureMatcher = {
+export type RESTFixtureMatcher = {
   // A function that is run on each intercepted request to determine if the request should be mocked or not
   matcher: Predicate<CyHttpMessages.IncomingHttpRequest>;
   // The name to be used when using cy.wait(_) Note: do not add the `@` symbol here
