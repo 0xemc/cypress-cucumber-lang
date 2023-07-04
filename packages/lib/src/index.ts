@@ -1,6 +1,7 @@
 import { gqlIntercept, restIntercept } from "./cypress.utils";
 import { GQL_MATCHERS } from "./matchers/gql.matchers";
 import { RESTMatchers } from "./matchers/hierarchy.matchers";
+import "@testing-library/cypress/add-commands";
 
 /** Setup intercepts */
 beforeEach(() => {
