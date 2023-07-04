@@ -1,6 +1,10 @@
 import { Given } from "@badeball/cypress-cucumber-preprocessor";
 import { gqlIntercept } from "../cypress.utils";
 
+Given(/the '(.+)' url is loaded/, (url: string) => {
+  cy.visit(url);
+});
+
 Given(
   /we expect an '(\w+)' request( with alias '(\w+)')?(to be sent with input:)?/,
   (operation: string, alias: string, hasInput: string, input: string) => {

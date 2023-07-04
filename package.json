@@ -5,7 +5,8 @@
   "description": "A human readable testing framework for web interfaces",
   "license": "ISC",
   "workspaces": [
-    "packages/*"
+    "packages/lib",
+    "packages/docs"
   ],
   "scripts": {
     "build": "npm run build --workspaces"

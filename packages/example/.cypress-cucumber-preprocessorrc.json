@@ -1,0 +1,6 @@
+{
+  "stepDefinitions": [
+    "cypress/support/steps/**/*.{js,ts}",
+    "node_modules/cypress-cucumber-lang/dist/steps/**/*.{js,ts}"
+  ]
+}
