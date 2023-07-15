@@ -1,7 +1,7 @@
 {
   "name": "cypress-cucumber-lang-monorepo",
   "author": "Michael Collins",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0",
   "description": "A human readable testing framework for web interfaces",
   "license": "ISC",
   "workspaces": [
