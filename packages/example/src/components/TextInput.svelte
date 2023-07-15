@@ -2,7 +2,7 @@
   export let value = "";
 </script>
 
-<input bind:value />
+<input bind:value {...$$props} />
 
 <style>
   input {

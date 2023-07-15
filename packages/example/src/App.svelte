@@ -16,6 +16,7 @@
 
   const saveText = () => {
     localStorage.setItem("textInput", textInput);
+    fetch(`https://api.chucknorris.io/jokes/search?query=${textInput}`);
   };
 
   // Load text input from local storage on mount
@@ -30,8 +31,10 @@
 <main>
   {#if user}
     <h1>Welcome, {user.username}!</h1>
-    <TextInput bind:value={textInput} />
-    <button on:click={saveText}>Save Text</button>
+    <TextInput aria-label="searchText" bind:value={textInput} />
+    <button data-testid="make-request-button" on:click={saveText}
+      >Save Text</button
+    >
   {:else}
     <RegistrationForm />
   {/if}

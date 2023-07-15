@@ -3,6 +3,7 @@
   "version": "1.0.0-alpha",
   "description": "A human readable testing framework for web interfaces",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "doc": "docs"
   },

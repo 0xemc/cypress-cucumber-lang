@@ -1,5 +1,5 @@
 {
-  "name": "svelte-vite-typescript-app",
+  "name": "example",
   "version": "1.0.0",
   "description": "A Svelte app with text input that is saved to local storage on a button click. Includes a user registration form. Built with TypeScript and Vite.",
   "main": "src/main.ts",

@@ -85,10 +85,6 @@ Then(/a file with the name '(.*)' should be downloaded/, (name: string) => {
 Then(
   /(the|a) '(.*)' request (is|has been) sent( with input:)?/,
   (_, request: string, __, checkInput: string, input: string) => {
-    /** If our tests are running e2e then ignore network request assertions */
-    const islocal = Cypress.env("app_url").includes("localhost");
-    if (!islocal) return;
-
     cy.wait(request).then(({ request }) => {
       if (checkInput) {
         const hasInput = hasOperationInput(request, JSON.parse(input));

@@ -7,7 +7,7 @@ export type RESTFixtureMatcher = {
   // The name to be used when using cy.wait(_) Note: do not add the `@` symbol here
   alias: string;
   //The file path of the response relative to `src/cypress/fixtures`
-  response: string;
+  response?: string;
 };
 
 /** A definition that maps a particular response to a particular request and alias */

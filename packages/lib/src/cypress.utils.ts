@@ -69,7 +69,7 @@ export const gqlIntercept = ({
 export const restIntercept =
   (method: Method, url: RouteMatcher) =>
   ({ matcher, response, alias }: RESTFixtureMatcher) => {
-    cy.intercept(method, url, aliasRequest(alias, matcher, response)).as(alias);
+    cy.intercept(method, url, aliasRequest(alias, matcher, response));
   };
 
 // Alias http requests with the provided fixture if the matcher is true
