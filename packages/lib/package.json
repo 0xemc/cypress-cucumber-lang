@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "tsc -w",
     "build": "tsc",
-    "prepublish": "npm run build",
+    "prepublish": "cp ../../README.md ./ && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michael Collins",
