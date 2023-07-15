@@ -1,6 +1,6 @@
 <p align="center">
     <picture>
-      <img alt="Cypress Cucumber Lang Logo" width="200px" src="./packages/docs/assets/cypress-cucumber-lang-logo.png">
+      <img alt="Cypress Cucumber Lang Logo" width="200px" src="https://raw.githubusercontent.com/0xemc/cypress-cucumber-lang/main/packages/docs/assets/cypress-cucumber-lang-logo.png">
     </picture>    
 </p>
 <p align="center">

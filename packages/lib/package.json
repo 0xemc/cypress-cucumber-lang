@@ -1,6 +1,6 @@
 {
   "name": "cypress-cucumber-lang",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A human readable testing framework for web interfaces",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
